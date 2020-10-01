@@ -1,0 +1,72 @@
+<!doctype html>
+<html th:replace="layouts/admin :: main('Product - Phonedation Admin', ~{::div.main})">
+<div class="main">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="container-fluid">
+      <h3 class="page-title">Table</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- BASIC TABLE -->
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Products</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Description</th>
+                    <th>Color</th>
+                    <th>Condition</th>
+                    <th>Stock</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>iPhone X</td>
+                    <td>Apple</td>
+                    <td>Apple iPhone X Black 256GB</td>
+                    <td>Black</td>
+                    <td>New</td>
+                    <td>10</td>
+                    <td>Rp. 24,000,000</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Redmi Note 9 Pro</td>
+                    <td>Xiaomi</td>
+                    <td>Xiaomi Redmi Note 9 Pro 8/256</td>
+                    <td>Emerald</td>
+                    <td>New</td>
+                    <td>5</td>
+                    <td>Rp. 5,244,999</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- END BASIC TABLE -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html th:replace="layouts/admin :: main('Invoice - Phonedation Admin', ~{::div.main})">
+<div class="main">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="container-fluid">
+      <h3 class="page-title">Table</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- BASIC TABLE -->
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Invoices</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Transaction Number</th>
+                    <th>Address</th>
+                    <th>Payment</th>
+                    <th>Shipment</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Shipping</td>
+                    <td>7A73HCG9</td>
+                    <td>Somewhere in Ciwaruga</td>
+                    <td>OVO</td>
+                    <td>JNE REG</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Waiting for Payment</td>
+                    <td>2SBD73B2</td>
+                    <td>Somewhere in Jampang Kulon</td>
+                    <td>BCA Virtual Account</td>
+                    <td>TIKI</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- END BASIC TABLE -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+
+</html>

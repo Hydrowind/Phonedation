@@ -1,0 +1,86 @@
+<!doctype html>
+<html th:replace="layouts/admin :: main('User - Phonedation Admin', ~{::div.main})">
+<div class="main">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="container-fluid">
+      <h3 class="page-title">Table</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- BASIC TABLE -->
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">Users</h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Fullname</th>
+                    <th>Gender</th>
+                    <th>Birth Date</th>
+                    <th>Phone Number</th>
+                    <th>Date Joined</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>steve@jobs.co</td>
+                    <td>0*&3812&*3Ag</td>
+                    <td>Steve Jobs</td>
+                    <td>1</td>
+                    <td>28-08-1980</td>
+                    <td>405.449.9622</td>
+                    <td>12-12-2019</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>erick@harper.co</td>
+                    <td>0*&3812&*3Ag</td>
+                    <td>Erick Harper</td>
+                    <td>1</td>
+                    <td>19-02-1983</td>
+                    <td>132-073-0302</td>
+                    <td>13-02-2019</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>jane@doe.co</td>
+                    <td>0*&3812&*3Ag</td>
+                    <td>Jane Doe</td>
+                    <td>0</td>
+                    <td>28-08-1980</td>
+                    <td>1-977-830-9206</td>
+                    <td>02-10-2019</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- END BASIC TABLE -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+
+</html>

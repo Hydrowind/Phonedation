@@ -1,0 +1,74 @@
+<!doctype html>
+<html th:replace="layouts/admin :: main('Address - Phonedation Admin', ~{::div.main})">
+<div class="main">
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <div class="container-fluid">
+      <h3 class="page-title">Table</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- BASIC TABLE -->
+          <div class="panel">
+            <div class="panel-heading clearfix">
+              <h3 class="panel-title">Addresses</h3>
+              <a class="btn btn-primary pull-right">+</a>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Province</th>
+                    <th>City</th>
+                    <th>Details</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>User</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Jawa Barat</td>
+                    <td>Bandung</td>
+                    <td>Somewhere in Ciwaruga</td>
+                    <td>1.8297364812</td>
+                    <td>1.0837472816</td>
+                    <td>Erick Hadron</td>
+                    <td>
+                      <a th:href="@{/admin/address/edit/1}">
+                        <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      </a>
+                      <a th:href="@{/admin/address/remove/1}">
+                        <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Jawa Barat</td>
+                    <td>Sukabumi</td>
+                    <td>Somewhere in Jampang Kulon</td>
+                    <td>1.3297364812</td>
+                    <td>1.6837472816</td>
+                    <td>Frank Upton Sr.</td>
+                    <td>
+                      <button type="button" class="btn btn-xs btn-warning"><i class="fa fa-edit"></i></button>
+                      <button type="button" class="btn btn-xs btn-danger"><i class="fa fa-trash-o"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- END BASIC TABLE -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN CONTENT -->
+</div>
+<!-- END MAIN -->
+
+</html>
